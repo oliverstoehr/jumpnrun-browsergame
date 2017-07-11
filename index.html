@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>RMA Projekt - Jump & Run Browsergame</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex, nofollow"> 
+		<meta name="author" content="Oliver Stöhr">
+		<meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=no" />
+		<script src="BufferLoader.js" charset="utf-8"></script>
+		<script src="game.js" charset="utf-8"></script>
+		<script src="menu.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+		<main>
+			<!-- Ladebildschirm -->
+			<div id='loadingScreen'>
+				<div>
+				</div>
+			</div>
+			<!-- Canvas -->
+			<canvas id="canvas" width="1280" height="720">
+				Ihr Browser unterstützt kein HTML5 Canvas.
+			</canvas>
+			<!-- Menu -->
+			<div id="menu" class="hud">
+				<h1>Menü</h1>	
+				<a href="level1.html" class="button">Spiel starten</a>
+				<div id="scores">
+					<h2>Bestzeiten</h2>
+					<p><b>Level 1 </b>- <span id="timeLevel1"></span></p>
+					<p><b>Level 2 </b>- <span id="timeLevel2"></span></p>
+					<p><b>Level 3 </b>- <span id="timeLevel3"></span></p>
+				</div>
+				<p id="legalButton">
+					<a href="#legal" class="button">Info</a>
+				</p>
+			</div>
+			<!-- Impressum Overlay -->
+			<div id="legal" class="hud">
+				<h3>Erstellt von</h3>
+				<p>
+					<b>Oliver Stöhr</b><br>
+					<a href="mailto:oliver.alexander.stoehr@stud.fh-luebeck.de">oliver.alexander.stoehr@stud.fh-luebeck.de</a>
+				</p>
+				<hr>
+				<p>
+					Charakter-Grafik von <a href="http://opengameart.org/content/an-8-bit-beat-em-up-character-sprite-sheet" target="_blank">usr_share</a> lizenziert unter <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0</a>.<br>
+					Weitere Grafiken von <a href="http://opengameart.org/content/bomb-party-the-complete-set" target="_blank">usr_share (Original von Matt Hackett von Lost Decade Games, erweitert von Cem Kalyoncu und usr_share)</a> lizenziert unter <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY 3.0</a>.<br>
+					Musik "Lines Of Code" von <a href="http://opengameart.org/content/lines-of-code" target="_blank">Trevor Lentz</a> lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC-BY-SA 3.0</a>.<br>
+					Musik "Happy Adventure" von <a href="http://opengameart.org/content/happy-adventure-loop" target="_blank">Tiny Worlds</a> lizenziert unter <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0</a>.<br>
+					Jingles von <a href="http://opengameart.org/content/8-bit-sound-effects-library" target="_blank">Little Robot Sound Factory</a> lizenziert unter <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY 3.0</a>.<br>
+					Sprung Sound von <a href="http://opengameart.org/content/8-bit-jump-1" target="_blank">Jesús Lastra</a> lizenziert unter <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0</a>.<br>
+					<br>
+					<br>
+					<a href="#" class="button">Schließen</a>
+				</p>
+			</div>
+			<!-- Tastenbelegung -->
+			<p>
+				<strong>P</strong> - Pause<br>
+				<strong>Pfeil links</strong> - nach links bewegen<br>
+				<strong>Pfeil rechts</strong> - nach rechts bewegen<br>
+				<strong>Pfeil oben</strong> - springen
+			</p>
+				 
+		</main>
+	</body>
+</html>

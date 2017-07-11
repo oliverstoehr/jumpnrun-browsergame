@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>RMA Projekt - Jump & Run Browsergame | Level 1</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex, nofollow"> 
+		<meta name="author" content="Oliver Stöhr">
+		<meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=no" />
+		<script src="BufferLoader.js" charset="utf-8"></script>
+		<script src="game.js" charset="utf-8"></script>
+		<script src="level1.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+		<main>
+			<!-- Ladebildschirm -->
+			<div id='loadingScreen'>
+				<div>
+				</div>
+			</div>
+			<!-- Canvas -->
+			<canvas id="canvas" width="1280" height="720">
+				Ihr Browser unterstützt kein HTML5 Canvas.
+			</canvas>
+			<!-- Gewinn Pop-Up -->
+			<div id="lvlFinished" class="hud" style="opacity: 0; pointer-events: none;">
+				<h1>Level geschafft!</h1>
+				Du hast <span class="bold"></span> benötigt.<br>
+				<br>
+				<br>
+				<a href="level2.html" class="button">weiter</a>
+			</div>
+			<!-- Touch-Steuerung -->
+			<div class="touchContainer">
+				<button class="touch left">◀️</button>
+				<button class="touch right">▶️</button>
+				<button class="touch jump">🔼</button>
+				<button class="touch pause">⏸</button>
+			</div>
+			
+			<!-- Tastenbelegung -->
+			<p>
+				<strong>P</strong> - Pause<br>
+				<strong>Pfeil links</strong> - nach links bewegen<br>
+				<strong>Pfeil rechts</strong> - nach rechts bewegen<br>
+				<strong>Pfeil oben</strong> - springen
+			</p>
+				 
+		</main>
+	</body>
+</html>
