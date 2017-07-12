@@ -1,4 +1,4 @@
-# jumpnrun-browsergame
+# jump 'n' run browsergame
 A small browser game with 2D graphics and parallax effects.
 I created this game as a project for my studies.
 
